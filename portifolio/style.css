@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*PERFIL*/
+aside{
+    background-color: rgb(58, 58, 224);
+    width: 25%;
+    height: 100vh;
+}
+
+.foto img{
+    background-image: url(imagem/perfil-github.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 320px;
+    height: 320px;
+    margin-top: 50%;
+    border: 6px solid rgb(1, 1, 114);
+}
+
+.foto{
+    width: 350px;
+    margin: auto;
+}
+
+div.info{
+    width: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.info a:hover{
+    font-size: 35px;
+    transition: 0.3s ;
+}
+/*PERFIL*/
+
+/*CONTEUDO*/
+article{
+    height: 300px;
+    float: right;
+    width: 75%;
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+
+div.article h1{
+    margin-left: 60px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+}
+
+h2{
+    margin-left: 60px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 span{
+    color:rgb(58, 58, 224);
+}
+
+p{
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-style:italic;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.contatos{
+    width: 200px;
+    height: 50px;
+    margin-left: 60px;
+}
+
+.contatos img{
+    width: 30px;
+    margin-right: 10px;
+}
+.contatos img:hover{
+    width: 35px;
+    transition: 0.3s;
+}

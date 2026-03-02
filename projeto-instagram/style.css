@@ -1,0 +1,237 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+/*CABEÇARIO*/
+header{
+    width: 5%;
+    height: 100vh;
+    position:fixed;
+    z-index: 10;
+    background-color: white;
+}
+
+div.header{
+    height: 100%;
+    width: 30px;
+    margin: auto;
+}
+
+div.center{
+    width: 30px;
+    height: 400px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header img{
+    width: 30px;
+}
+
+img.logo{
+    margin-top: 30px;
+}
+
+img.menu{
+    margin-top: 250px;
+}
+
+a img:hover{
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+img.logo:hover{
+    width: 35px ;
+    height: 35px;
+    transition: 0.3s;
+}
+
+@media(max-width:700px){
+
+     header{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+    }
+
+    div.header{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    div.center{
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        margin-top: 0;
+        gap: 20px;
+    }
+
+    img.menu{
+        margin-top: 0;
+    }
+
+    img.logo{
+        margin-top: 0;
+    }
+
+}
+/*CABEÇARIO*/
+
+/*STORY*/
+section{
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 75%;
+    height: 150px;
+    float: right;
+    position: fixed;
+    z-index: 9;
+    background-color: white;
+}
+div.story{
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.story img{
+    width: 70px;
+    border: 5px solid rgb(255, 145, 0);
+    border-radius: 50%;
+}
+
+.story img:hover{
+    width: 75px;
+    height: 75px;
+    transition: 0.3s;
+}
+
+@media(max-width: 700px){
+    section{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100px;
+        overflow: hidden;
+    }
+
+    div.story{
+        width:450px;
+    }
+
+    div.story img:hover{
+        width: 55px;
+        height: 55px;
+        transition: 0.3s;
+    }
+
+    .story img{
+        width: 50px;
+        height: 50px;
+    }
+}
+/*STORY*/
+
+/*CONTEUDO*/
+article{
+    position: absolute;
+    top: calc(0px + 150px);
+    right: 25%;
+    width: 1200px;
+    height: 100vh;
+    margin: auto;
+}
+
+div.conteudo{
+    width: 500px;
+    height: auto;
+    margin: auto;
+}
+
+.content-perfil{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+}
+
+.content-perfil img{
+    width: 30px;
+    margin: 0px 10px 0px 0px;
+}
+
+.content-perfil p{
+    padding-top: 5px;
+    margin-right: 8px;
+}
+
+div.conteudo img.hariel{
+    background-image: url(imagens/hariel.jpg);
+    width: 100%;
+    height:650px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+}
+
+div.info{
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+}
+
+div.info img{
+    width: 30px;
+}
+
+div.info span{
+      margin-right: 30px;
+      margin-left: 10px;
+}
+
+div.info img:hover{
+    width: 30px;
+    height: 30px;
+}
+
+@media(max-width:700px){
+
+    article{
+        position: absolute;
+        top: 0;        
+        bottom: 70px;      
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height:1000px;
+        overflow-y: auto;
+    }
+
+    div.conteudo{
+        width: 700px;
+    }
+
+}
