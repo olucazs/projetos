@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*FORMULARIO*/
+header{
+    width: 40%;
+    height: 100dvh;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    z-index: 1;
+    border-left: 1px solid;
+}
+
+form{
+    width: 100%;
+    height: 800px;
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form h1{
+    font-size: 22px;
+    margin-right: auto;
+    margin-left: 13%;
+    margin-bottom: 40px;
+}
+
+input{
+    width:550px;
+    padding: 15px;
+    border: 1px solid rgb(104, 104, 104);
+    border-radius: 15px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[value=Entrar]{
+    background-color: rgb(39, 97, 255);
+    color: white;
+}
+
+input[value=Entrar]:hover{
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+input[class=nova-conta]{
+    background-color: white;
+    border: 2px solid rgb(39, 97, 255);
+    color: rgb(39, 97, 255);
+}
+
+input[class=nova-conta]:hover{
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+input[class=forgot]{
+    border: none;
+    background-color: white;
+}
+
+input[class=forgot]:hover{
+    font-size: 20px;
+    transition: 0.3s;
+}
+/*FORMULARIO*/
+
+/*BACKGROUND*/
+section{
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
+
+div.bg{
+    background-image: url(imagem/background.png);
+    width: 700px;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*BACKGROUND*/
+
+/*ASIDE*/
+aside{
+    width: 400px;
+}
+
+aside h2{
+    font-size: 70px;
+    width: 350px;
+    position:absolute;
+    bottom: 70px;
+    left: 40px;
+}
+
+aside span{
+    color:rgb(39, 97, 255); 
+}
+/*ASIDE*/
+
+@media(max-width:1550px){
+     header{
+        border-style: none;
+        position: inherit;
+        width: 700px;
+        background-color: white;
+        margin: auto;
+        margin-left: 40%;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    input{
+        width: 600px;
+    }
+
+    section{
+        display: none;
+    }
+
+    div.bg{
+        display: none;
+    }
+}
+
+@media(max-width: 1385px){
+    div.bg{
+        background-image: none;
+    }
+
+}
+
+@media(max-width:850px){
+    header{
+        position: inherit;
+        width: 500px;
+        background-color: white;
+        margin: auto;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    section{
+        display: none;
+    }
+
+    div.bg{
+        display: none;
+    }
+
+    input{
+        width: 400px;
+    }
+
+    aside{
+        color: white;
+        display: none;
+
+    }
+    
+    h2 span{
+        color: white;
+    }
+}
